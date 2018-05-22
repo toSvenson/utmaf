@@ -1,0 +1,215 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>Autofans URL Builder</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+
+        <div class="container">
+                <div class="header">
+                    <h3 class="text-muted">Autofans URL Builder</h3>
+                    <p class="text-muted">Voeg UTM tags toe voor gedetailleerde tracking met Google Analytics.</p>
+                </div>
+    
+                <div class="row input-section">
+                    <div class="col-md-12">
+    
+                          <!-- LANDING PAGE -->
+                          <div class="form-group">
+                            <h5><label for="landingPageUrl">1. URL Landing Page</label></h5>
+                            <input type="url" class="form-control" name="landingPageUrl" placeholder="http://...">
+                          </div>
+  
+    
+                        <div class="row">
+                             <div class="col-sm-4">
+                                <h5>2. Medium</h5>
+                                <p class="text-muted"><small>het algemene van mediakanaal.</small></p>
+                                <!-- SOURCE -->
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="utm_medium" value="social" checked>
+                                        Social Media
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="utm_medium" value="paid-social">
+                                        Social Media (ad/boost)
+                                    </label>
+                                    </div>                                
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="utm_medium" value="email">
+                                        Email
+                                    </label>
+                                    </div>                                
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="utm_medium" value="banner">
+                                        Banner
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="utm_medium" value="cpc">
+                                        Paid Ad ('cpc')
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="utm_medium" value="referral">
+                                        Website ('referral')
+                                    </label>
+                                </div>
+                                <!-- END MEDIUM -->
+    
+                             </div>
+                             <div class="col-sm-4">
+                                <h5>3. Source</h5>
+                                <p class="text-muted"><small>Waar zal je de link plaatsen?</small></p>
+                                <!-- SOURCE -->
+                                <div class="radio">
+                                  <label>
+                                    <input type="radio" name="utm_source" value="facebook.com" checked>
+                                    Facebook
+                                  </label>
+                                </div>
+                                <div class="radio">
+                                  <label>
+                                    <input type="radio" name="utm_source" value="twitter.com">
+                                    Twitter
+                                  </label>
+                                </div>
+                                <div class="radio">
+                                  <label>
+                                    <input type="radio" name="utm_source" value="linkedin.com">
+                                    LinkedIn
+                                  </label>
+                                </div>
+                                <div class="radio">
+                                  <label>
+                                    <input type="radio" name="utm_source" value="newsletter">
+                                    Newsletter
+                                  </label>
+                                </div>
+                                <div class="radio">
+                                  <input type="radio" name="utm_source" value="other" id="sourceOtherRadio">
+                                  <div class="form-group">
+                                      <input placeholder="Other" type="text" class="form-control form-control-sm input-sm" id="sourceOther" name="sourceOther">
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="col-sm-4">
+                                <h5>4. Campaign <span class="glyphicon glyphicon-question-sign text-muted" title="Which campaign or category?"></span></h5>
+                                <p class="text-muted"><small>Waar zal je de link plaatsen?</small></p>    
+                                <!-- CAMPAIGN -->
+                                <div class="radio">
+                                    <label>
+                                    <input type="radio" name="utm_campaign" value="general" checked>
+                                    Algemeen (artikel)
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                    <input type="radio" name="utm_campaign" value="list">
+                                    Lijst (artikel)
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                    <input type="radio" name="utm_campaign" value="official">
+                                    Officieel (artikel)
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                    <input type="radio" name="utm_campaign" value="review">
+                                    Rijtest (artikel)
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                    <input type="radio" name="utm_campaign" value="reportage">
+                                    Reportage (artikel)
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                    <input type="radio" name="utm_campaign" value="video">
+                                    Video (artikel)
+                                    </label>
+                                </div>     
+                                <div class="radio">
+                                        <label>
+                                        <input type="radio" name="utm_campaign" value="oldtimer">
+                                        Oldtimer (artikel)
+                                        </label>
+                                    </div>                                                                    
+                                <div class="radio">
+                                    <label>
+                                    <input type="radio" name="utm_campaign" value="weekly-digest">
+                                    Weekly newsletter
+                                    </label>
+                                    </div>                                
+                                <div class="radio">
+                                    <input type="radio" name="utm_campaign" value="other" id="campaignOtherRadio">
+                                    <div class="form-group">
+                                        <input placeholder="tour-amical, 201803-suzuki, .." type="text" class="form-control form-control-sm input-sm" id="campaignOther" name="campaignOther">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- REF ID / NAME -->
+                        <div class="form-group">
+                                <h5><label for="utm_content">4. Content</label></h5>
+                                <p class="text-muted"><small>Optioneel hoog detail. Nuttig om onderscheid te maken in éénzelfde campagne. bv. Meerdere links in een email nieuwbrief.</small></p>
+                                <input type="text" class="form-control" name="utm_content" placeholder="bv. banner_image_link">
+                        </div>
+
+                        <button type="submit" class="btn btn-success btn-lg" id="getTaggedURL">Genereer Tagged URL</button>
+    
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="alert alert-info result" id="result-placeholder" role="alert">
+                            ...
+                        </div>
+                        <div class="alert alert-success result" id="result-success" role="alert">
+                          <h4>Your tagged URL:</h4>
+                            <p id="result-url" class="result-url"></p>
+                            <button type="submit" class="btn btn-primary btn-sm" id="copyToClipboard">Copy to Clipboard</button>
+                            <a href="" id="result-link" class="btn btn-primary btn-sm" target="_blank">Open link</a>
+                            <ul class="notes">
+                              <li><small>Voor twitter posts, gebruik een URL shortener. <a href="https://www.bitly.com" target="_blank">Bitly</a></small></li>
+                            </ul>
+                        </div>
+                        <div class="alert alert-danger result" id="result-error" role="alert">
+                            err
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer">
+                    <p><a href="http://www.autofans.be">Autofans.be</a></p>
+                </div>
+    
+            </div>    
+
+
+<script src="jquery-3.3.1.slim.min.js"></script>
+<script src="bootstrap.bundle.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
