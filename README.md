@@ -7,3 +7,6 @@ Algemene, belangrijke regels:
  - Gebruik geen speciale karakters zoals / € * # @ &
  - Dubbel check voor spelfouten, corrigeren is niet mogelijk
  - Gebruik nooit tagging voor interne links
+ 
+ 
+ [Open Tool](https://tosvenson.github.io/utmaf/)
